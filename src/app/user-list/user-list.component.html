@@ -1,0 +1,17 @@
+<h1> Social Media Users List</h1>
+<table class="table table-striped">
+    <tr><th>Id</th>
+        <th>User Name</th>
+        <th>User Actaul NAme </th>
+        <th>Email</th>
+        <th>User Profile</th>
+        <th>Posts</th>
+    </tr>
+        <tr  *ngFor="let user of usersList">
+            <td>{{user.id}}</td>
+            <td>{{user.username}}</td>
+            <td>{{user.name}}</td>
+            <td>{{user.email}}</td>
+            <td><button class="btn bg-success" >Profile</button></td>
+            <td><button class="btn bg-info" routerLink="/users/{{user.id}}/posts">Posts</button></td></tr>
+</table>

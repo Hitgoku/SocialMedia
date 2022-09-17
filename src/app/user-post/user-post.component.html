@@ -1,0 +1,15 @@
+<h1> Social Media Users List</h1>
+<table class="table table-striped">
+    <tr><th>Id</th>
+        <th>Post Details</th>
+        <th>Post Name </th>
+        <th>Post Comments</th>
+        <th>User Details</th>
+    </tr>
+        <tr  *ngFor="let post of userPosts">
+            <td>{{post.id}}</td>
+            <td>{{post.body}}</td>
+            <td>{{post.title}}</td>
+            <td><button class="btn bg-success">Comments</button></td>
+            <td><button class="btn bg-info" >Profile</button></td></tr>
+</table>
